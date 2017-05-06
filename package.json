@@ -1,0 +1,23 @@
+{
+  "name": "hello",
+  "version": "1.0.0",
+  "description": "Hello",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rockybars/hello.git"
+  },
+  "author": "Dhi Aurrahman <diorahman@rockybars.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rockybars/hello/issues"
+  },
+  "homepage": "https://github.com/rockybars/hello#readme",
+  "devDependencies": {
+    "tape": "^4.6.3",
+    "tarik": "^1.0.4"
+  }
+}
