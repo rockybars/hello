@@ -5,7 +5,7 @@ pipeline {
       steps {
         sh 'echo $NVM_DIR'
         sh 'whoami'
-        sh 'which node'
+        sh 'source ~/.bashrc'
         sh 'npm install'
       }
     }
