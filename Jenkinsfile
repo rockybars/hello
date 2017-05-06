@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('Install') {
       steps {
-        sh 'echo $SHELL'
+        sh 'echo $NVM_DIR'
+        sh 'whoami'
         sh 'npm install'
       }
     }
