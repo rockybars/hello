@@ -4,6 +4,8 @@ pipeline {
     stage('Install') {
       steps {
         sh '. ~/.nvm/nvm.sh use 6'
+        sh 'which nvm'
+        sh 'npm --version'
         sh 'npm install'
       }
     }
