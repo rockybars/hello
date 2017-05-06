@@ -5,7 +5,7 @@ pipeline {
       steps {
         sh 'echo $NVM_DIR'
         sh 'whoami'
-        sh 'source ~/.bashrc && nvm use 6 && which node && npm install'
+        sh 'source ~/.bashrc > /dev/null && nvm use 6 && which node && npm install'
       }
     }
     stage('Tests') {
