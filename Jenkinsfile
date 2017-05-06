@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Install') {
       steps {
-        sh '. ~/.nvm/nvm.sh install 6'
+        sh 'command -v nvm'
         sh 'npm install'
       }
     }
