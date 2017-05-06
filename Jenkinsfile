@@ -5,7 +5,7 @@ pipeline {
       steps {
         sh 'echo $NVM_DIR'
         sh 'whoami'
-        sh 'nvm use 6'
+        sh 'which node'
         sh 'npm install'
       }
     }
