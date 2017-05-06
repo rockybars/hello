@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Install') {
       steps {
-        sh 'source $NVM_DIR/nvm.sh && nvm use 6'
+        sh '. ~/.nvm/nvm.sh install 6'
         sh 'npm install'
       }
     }
