@@ -38,3 +38,16 @@ test('ok', function (t) {
       server.close()
     })
 })
+
+test('ok', function (t) {
+  listen()
+    .then(function ({port}) {
+      return request(`http://localhost:${port}`)
+    })
+    .then(function ({statusCode, body}) {
+      t.equal(statusCode, 200)
+      t.equal(body, 'OK')
+      t.end()
+      server.close()
+    })
+})
