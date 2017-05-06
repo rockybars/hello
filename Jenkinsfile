@@ -6,6 +6,7 @@ pipeline {
         sh 'echo $NVM_DIR'
         sh 'whoami'
         sh 'source ~/.bashrc && nvm use 6'
+        sh 'which node'
         sh 'npm install'
       }
     }
